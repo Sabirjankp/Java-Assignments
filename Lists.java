@@ -76,5 +76,52 @@ public class Lists {
 		
 		System.out.println("pop operation");
 			System.out.println(list);
+			list.poll();
+			System.out.println(list);
+	}
+	public void Priorityqueue()
+	{
+		PriorityQueue<Integer> list=new PriorityQueue<Integer>();
+		for(int i=0;i<=5;i++)
+		{
+			list.add(i);
+		}
+		System.out.println(" first pop operation");
+			System.out.println(list);
+		list.remove();
+		list.poll();
+		System.out.println("second pop operation after poll");
+		System.out.println(list);
+		//System.out.println("third pop operation after remove");
+		//System.out.println(list);
+	}
+	public void Deq()
+	{
+		Deque<String> list = new ArrayDeque<String>();
+		list.add("Khan");  
+		list.add("Wali");  
+		list.add("Jan"); 
+		list.addLast("Pari");
+		list.addFirst("Sabir");
+		
+		for(String item: list)
+		{
+			System.out.println(item);
+		}
+	}
+	public void Hash()
+	{
+		HashSet<String> set=new HashSet<String>();
+		
+		set.add("Shah");
+		set.add("Konar");
+		set.add("last");
+		
+		for(String item: set)
+		{
+			System.out.println(item);
+		}
+		set.removeAll(set);
+		System.out.println(set);
 	}
 }

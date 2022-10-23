@@ -17,6 +17,12 @@ public class Driver {
 		obj.Stack_();
 		System.out.println("------------------=end of stack--------------------");
 		obj.queue_();
+		System.out.println("------------------=end of queue--------------------");
+		obj.Priorityqueue();
+		System.out.println("------------------=end of queue--------------------");
+		obj.Deq();
+		System.out.println("------------------=end of Deque--------------------");
+		obj.Hash();
 	}
 
 }
